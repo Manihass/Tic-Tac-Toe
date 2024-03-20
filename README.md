@@ -5,12 +5,12 @@ This project is a simple implementation of the classic Tic Tac Toe game using HT
 ### Usage
 1. **Clone the Repository:**
    ```
-   git clone https://github.com/your-username/tic-tac-toe.git
+   git clone https://github.com/Manihass/Tic-Tac-Toe.git
    ```
 
 2. **Open `index.html` in a Web Browser:**
    ```
-   cd tic-tac-toe
+   cd Tic-Tac-Toe
    ```
    Open `index.html` in your preferred web browser.
 
