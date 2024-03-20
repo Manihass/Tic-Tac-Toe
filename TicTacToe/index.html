@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Declaring character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuring viewport for responsiveness -->
+    <title>Tic-tac-toe Game</title> <!-- Setting page title -->
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external stylesheet -->
+</head>
+<body>
+<div class="container"> <!-- Container for the entire content -->
+    <h1>Tic-tac-toe Game</h1> <!-- Main heading -->
+    <div class="game"> <!-- Game section -->
+        <div id="board" class="board"> <!-- Game board -->
+            <div class="cell" data-cell></div> <!-- Individual cell in the board -->
+            <div class="cell" data-cell></div> <!-- Individual cell in the board -->
+            <div class="cell" data-cell></div> <!-- Individual cell in the board -->
+            <div class="cell" data-cell></div> <!-- Individual cell in the board -->
+            <div class="cell" data-cell></div> <!-- Individual cell in the board -->
+            <div class="cell" data-cell></div> <!-- Individual cell in the board -->
+            <div class="cell" data-cell></div> <!-- Individual cell in the board -->
+            <div class="cell" data-cell></div> <!-- Individual cell in the board -->
+            <div class="cell" data-cell></div> <!-- Individual cell in the board -->
+        </div>
+        <button id="restartButton">Restart Game</button> <!-- Button to restart the game -->
+    </div>
+    <div class="dashboard"> <!-- Dashboard section -->
+        <h2>Dashboard</h2> <!-- Dashboard heading -->
+        <div id="scoreboard"> <!-- Scoreboard -->
+            <div class="player" id="playerX">Player X: <span>0</span></div> <!-- Player X score -->
+            <div class="player" id="playerO">Player O: <span>0</span></div> <!-- Player O score -->
+            <div class="draw">Draw: <span>0</span></div> <!-- Draw score -->
+        </div>
+    </div>
+</div>
+<script src="script.js"></script> <!-- Linking external JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Base styles for the whole page */
+body {
+    font-family: Arial, sans-serif; /* Using Arial font for text */
+    text-align: center; /* Center aligning the text */
+    background-color: #f0f0f0; /* Setting background color for the body */
+}
+
+/* Styles for the main container */
+.container {
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Stacking elements vertically */
+    align-items: center; /* Center aligning items horizontally */
+    margin-top: 50px; /* Adding margin space on top */
+}
+
+/* Styles for the main heading */
+h1 {
+    color: #333; /* Setting color for the heading */
+}
+
+/* Styles for the game section */
+.game {
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Stacking elements vertically */
+    align-items: center; /* Center aligning items horizontally */
+    margin-bottom: 20px; /* Adding margin space at the bottom */
+}
+
+/* Styles for the game board */
+.board {
+    display: grid; /* Using CSS grid for the game board */
+    grid-template-columns: repeat(3, 100px); /* Creating 3 equal columns */
+    grid-gap: 10px; /* Adding gap between grid items */
+    margin: 20px auto; /* Center aligning the board */
+    width: 320px; /* Setting fixed width for the board */
+}
+
+/* Styles for individual cells in the game board */
+.cell {
+    width: 100px; /* Setting width for each cell */
+    height: 100px; /* Setting height for each cell */
+    background-color: #20a6db; /* Setting background color for cells */
+    border: 1px solid #e0573f; /* Adding border for cells */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center; /* Center aligning content horizontally */
+    align-items: center; /* Center aligning content vertically */
+    font-size: 3em; /* Setting font size for the content */
+    cursor: pointer; /* Changing cursor on hover */
+    transition: background-color 0.3s ease; /* Adding transition effect on hover */
+}
+
+/* Hover styles for cells */
+.cell:hover {
+    background-color: #8cc7e5; /* Changing background color on hover */
+}
+
+/* Styles for X and O symbols */
+.cell.x::before,
+.cell.o::before {
+    content: attr(data-content); /* Displaying X or O content */
+    display: block; /* Displaying content as block */
+    border: 2px solid transparent; /* Adding border for symbols */
+    width: 70px; /* Setting width for symbols */
+    height: 70px; /* Setting height for symbols */
+    line-height: 70px; /* Aligning symbols vertically */
+    text-align: center; /* Aligning symbols horizontally */
+}
+
+/* Styles for X symbol */
+.cell.x::before {
+    color: rgb(255, 230, 0); /* Setting color for X symbol */
+}
+
+/* Styles for O symbol */
+.cell.o::before {
+    color: rgb(191, 72, 165); /* Setting color for O symbol */
+}
+
+/* Styles for the restart button */
+#restartButton {
+    margin-top: 20px; /* Adding margin space on top */
+    padding: 10px 20px; /* Adding padding */
+    font-size: 1em; /* Setting font size */
+    background-color: #007bff; /* Setting background color */
+    color: #fff; /* Setting text color */
+    border: none; /* Removing border */
+    cursor: pointer; /* Changing cursor on hover */
+    transition: background-color 0.3s ease; /* Adding transition effect */
+}
+
+/* Hover styles for the restart button */
+#restartButton:hover {
+    background-color: #0056b3; /* Changing background color on hover */
+}
+
+/* Styles for the dashboard section */
+.dashboard {
+    background-color: #fff; /* Setting background color */
+    padding: 20px; /* Adding padding */
+    border-radius: 10px; /* Adding border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    width: 320px; /* Setting width */
+}
+
+/* Styles for dashboard headings */
+.dashboard h2 {
+    color: #333; /* Setting color for headings */
+    margin-bottom: 10px; /* Adding margin space at the bottom */
+}
+
+/* Styles for scoreboard */
+#scoreboard {
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Distributing space between items */
+    margin-top: 10px; /* Adding margin space on top */
+}
+
+/* Styles for player scores */
+.player {
+    color: #333; /* Setting color for player scores */
+}
+
+/* Styles for draw score */
+.draw {
+    color: #333; /* Setting color for draw score */
+}
+
+/* Styles for score spans */
+.player span,
+.draw span {
+    font-weight: bold; /* Making score text bold */
+}
